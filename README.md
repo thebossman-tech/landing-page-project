@@ -1,108 +1,65 @@
-# Velora Landing Page — Internship Project
+# Velora — Responsive Landing Page
 
-## What we are building
+A modern, responsive landing page developed
+using HTML5, CSS3, and JavaScript.
 
-Velora is a fictional B2B workflow platform. The page is intentionally designed to feel like a real product launch rather than a generic HTML/CSS assignment.
+## Project Overview
 
-### Reference principles
+Velora is a fictional SaaS company that
+helps teams manage projects, collaborate,
+and improve productivity.
 
-We studied current product marketing patterns from Linear, Vercel and Framer:
-- Clear one-sentence positioning.
-- Product UI as visual proof instead of a generic stock hero.
-- Strong spacing and typography hierarchy.
-- Sections that each tell one story.
-- Social proof used to build trust.
-- Responsive behavior treated as part of the design.
-- Motion used to support clarity, not distract from it.
+This landing page demonstrates modern
+frontend development techniques,
+responsive design, and interactive
+user interface components.
 
-We are **not** copying their branding, copy, layout, or assets.
+## Technologies Used
 
-## Current feature checklist
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Git and GitHub
+
+## Features
 
 - Responsive navigation
 - Mobile hamburger menu
-- Hero section + CTA
-- Product dashboard visual built with HTML/CSS
-- Trust/logo strip
-- About/value section
-- Three feature/service cards
-- Dark product philosophy section
-- Testimonials with desktop controls + mobile slider
-- Final CTA
-- Footer with contact/social links
+- Hero section with CTA buttons
+- Four service cards
+- Testimonials section
 - Smooth scrolling
-- Scroll reveal animations
-- Floating UI animation
-- Reduced-motion accessibility support
-- Semantic HTML and accessible labels
+- Scroll animations
+- Keyboard accessibility
+- Responsive layouts
 
-## Suggested project structure
+## Getting Started
 
-velora-landing-page/
+1. Clone the repository.
+2. Open the project in VS Code.
+3. Open index.html using Live Server.
+
+## Responsive Design
+
+The website supports mobile, tablet,
+and desktop screen sizes.
+
+## Project Structure
+
+landing-page-project/
 ├── index.html
 ├── styles.css
 ├── script.js
 └── README.md
 
-## Learning roadmap to October 24
+## Live Demo
 
-### Phase 1 — Oct 8–10: Understand + run
-- Open the files in VS Code.
-- Run the page with Live Server or another local server.
-- Learn the HTML structure section by section.
-- Identify semantic elements: header, nav, main, section, article, footer.
-- Inspect the page with browser DevTools.
+Add the deployed website URL here.
 
-### Phase 2 — Oct 11–13: HTML/CSS mastery
-- Rebuild the header from scratch without looking.
-- Practice Flexbox with the nav.
-- Practice CSS Grid with hero/features/footer.
-- Understand clamp(), min(), max(), rem and percentages.
-- Test at 375px, 768px, 1024px and desktop widths.
+## Author
 
-### Phase 3 — Oct 14–16: JavaScript
-- Understand querySelector.
-- Understand click events.
-- Understand classList.
-- Understand IntersectionObserver.
-- Rebuild the mobile menu yourself.
-- Rebuild the testimonial slider yourself.
+Add your name and GitHub profile.
 
-### Phase 4 — Oct 17–19: Quality pass
-- Keyboard navigation.
-- Focus states.
-- Accessibility labels.
-- Mobile spacing.
-- Animation performance.
-- Image/font loading considerations.
-- Browser testing.
+## Acknowledgment
 
-### Phase 5 — Oct 20–22: Portfolio-level polish
-- Add a real project README.
-- Add favicon and Open Graph metadata.
-- Check page title/description.
-- Optimize performance.
-- Clean CSS naming.
-- Remove unused code.
-- Test Chrome, Edge and mobile viewport sizes.
-
-### Phase 6 — Oct 23: Review
-- Compare against the internship brief.
-- Run a final responsive checklist.
-- Fix visual inconsistencies.
-- Take screenshots.
-- Prepare a short project explanation.
-
-### Oct 24: Submission
-The final project should be something you can confidently explain line-by-line:
-1. Why the design looks this way.
-2. How responsive layout works.
-3. How the hamburger menu works.
-4. How the testimonial slider works.
-5. How scroll animations work.
-6. What accessibility decisions were made.
-7. What you would improve with more time.
-
-## Important
-
-Do not simply submit AI-generated code that you cannot explain. The goal of this project is to make you look like a junior developer who can reason about frontend decisions, not someone who can only generate a page.
+Developed as a frontend internship project.
