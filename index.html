@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Metadata describes the page; font preconnections reduce connection setup time. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -8,6 +9,14 @@
       content="Velora helps modern teams turn scattered work into clear, measurable workflows."
     />
     <meta name="theme-color" content="#0b0d12" />
+    <!-- Relative asset paths work both locally and inside a GitHub Pages project URL. -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Velora — Work, without the chaos." />
+    <meta
+      property="og:description"
+      content="A focused workspace for projects, people, and priorities. A fictional company landing page."
+    />
     <title>Velora — Work, without the chaos.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +27,10 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Keyboard users can bypass the repeated navigation. -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="site-shell">
+      <!-- Fixed company navigation and accessible mobile menu. -->
       <header class="site-header" id="top">
         <nav class="nav container" aria-label="Primary navigation">
           <a class="brand" href="#top" aria-label="Velora home">
@@ -35,7 +47,8 @@
             aria-controls="primary-menu"
             aria-label="Open menu"
           >
-            <span></span><span></span>
+            <!-- Three high-contrast bars become a close icon when the menu opens. -->
+            <span></span><span></span><span></span>
           </button>
 
           <div class="nav-links" id="primary-menu">
@@ -44,13 +57,14 @@
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
             <a class="nav-cta" href="#contact"
-              >Start a project <span aria-hidden="true">↗</span></a
+              >Let’s talk <span aria-hidden="true">↗</span></a
             >
           </div>
         </nav>
       </header>
 
-      <main>
+      <main id="main-content">
+        <!-- Hero: one main heading, a short value proposition, and anchor calls to action. -->
         <section class="hero section" id="home">
           <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
           <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
@@ -70,14 +84,19 @@
                 time creating.
               </p>
 
+              <!-- Hero call-to-action buttons -->
               <div class="hero-actions">
-                <a class="button button-primary" href="#contact"
-                  >Start free <span aria-hidden="true">→</span></a
-                >
-                <a class="button button-ghost" href="#services"
-                  >See how it works</a
-                >
-                <a class="button" href="#services">Explore Features</a>
+                <!-- Primary action -->
+                <a href="#contact" class="button button-primary">
+                  <span>Meet your workspace</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+
+                <!-- Secondary action -->
+                <a href="#services" class="button button-ghost">
+                  <span>Explore Features</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
               </div>
 
               <div class="trust-row" aria-label="Trust indicators">
@@ -85,17 +104,19 @@
                   <span>AM</span><span>JT</span><span>KO</span><span>+</span>
                 </div>
                 <p>
-                  <strong>2,400+</strong> teams are moving faster with Velora
+                  <strong>One workspace.</strong> Projects, people, and
+                  priorities.
                 </p>
               </div>
             </div>
 
             <div
               class="product-stage reveal reveal-delay"
-              aria-label="Velora product preview"
+              role="img"
+              aria-label="Illustrative Velora dashboard showing 18 active projects, 94 percent on track, and 47 open tasks"
             >
-              <div class="stage-orbit orbit-one"></div>
-              <div class="stage-orbit orbit-two"></div>
+              <div class="stage-orbit orbit-one" aria-hidden="true"></div>
+              <div class="stage-orbit orbit-two" aria-hidden="true"></div>
               <div class="dashboard">
                 <div class="dashboard-topbar">
                   <div class="window-dots"><i></i><i></i><i></i></div>
@@ -205,9 +226,10 @@
           </div>
         </section>
 
+        <!-- Illustrative customer names for this fictional company. -->
         <section class="logo-strip">
           <div class="container logo-row">
-            <span>Trusted by focused teams at</span>
+            <span>Illustrative customer showcase</span>
             <div class="logo-text">northstar</div>
             <div class="logo-text">PIVOT</div>
             <div class="logo-text">arc<span>°</span></div>
@@ -216,6 +238,7 @@
           </div>
         </section>
 
+        <!-- About: explain the business problem before presenting features. -->
         <section class="section section-light" id="about">
           <div class="container intro-grid">
             <div class="section-heading reveal">
@@ -237,6 +260,7 @@
           </div>
         </section>
 
+        <!-- Features: four articles share a balanced responsive grid. -->
         <section class="section services-section" id="services">
           <div class="container">
             <div class="section-heading centered reveal">
@@ -320,22 +344,29 @@
                 </div>
               </article>
 
-              <article class="feature-card">
+              <article class="feature-card reveal">
                 <div class="feature-icon icon-orange">⚡</div>
 
                 <span class="card-number"> 04 / AUTOMATE </span>
 
-                <h3>Automate repetitive work</h3>
+                <h3>Put routine work on autopilot.</h3>
 
                 <p>
                   Save time by automating routine tasks and keeping your team's
                   workflow moving.
                 </p>
+                <!-- A visual example explains the automation feature without implying a live backend. -->
+                <div class="automation-demo">
+                  <span>WHEN A TASK IS COMPLETED</span
+                  ><b>✓ Update project status</b><span>THEN AUTOMATICALLY</span
+                  ><b>↗ Notify the team</b>
+                </div>
               </article>
             </div>
           </div>
         </section>
 
+        <!-- Product preview: local filtering demonstrates interaction without a backend. -->
         <section class="section dark-section">
           <div class="container split-feature">
             <div class="split-copy reveal">
@@ -362,8 +393,8 @@
               <div class="command-top">
                 <span>⌘</span
                 ><input
-                  aria-label="Search commands"
-                  placeholder="Search anything..."
+                  aria-label="Filter preview commands"
+                  placeholder="Filter preview actions..."
                   value=""
                 />
               </div>
@@ -385,18 +416,20 @@
                 ><span>Workspace settings</span><kbd>⌘ ,</kbd>
               </div>
               <div class="command-footer">
-                Tip: Press <kbd>⌘ K</kbd> anytime to jump anywhere.
+                Interactive preview: type to filter the actions above.
               </div>
             </div>
           </div>
         </section>
 
+        <!-- Sample testimonials: JavaScript selects one card on every screen size. -->
         <section class="section testimonials-section">
           <div class="container">
             <div class="testimonial-head reveal">
               <div>
                 <p class="eyebrow dark">
-                  <span class="eyebrow-dot"></span> From the people using it
+                  <span class="eyebrow-dot"></span> Illustrative customer
+                  stories
                 </p>
                 <h2>Work feels different<br />when it flows.</h2>
               </div>
@@ -416,7 +449,14 @@
               </div>
             </div>
 
-            <div class="testimonial-track reveal" id="testimonial-track">
+            <div
+              class="testimonial-track reveal"
+              id="testimonial-track"
+              role="region"
+              aria-label="Customer stories"
+              aria-live="polite"
+              aria-atomic="true"
+            >
               <article class="testimonial-card active">
                 <div class="quote-mark">“</div>
                 <blockquote>
@@ -466,6 +506,7 @@
           </div>
         </section>
 
+        <!-- Contact: the example email is a placeholder until a real address is supplied. -->
         <section class="section cta-section" id="contact">
           <div class="cta-glow" aria-hidden="true"></div>
           <div class="container cta-inner reveal">
@@ -474,16 +515,17 @@
             </p>
             <h2>Make your next week<br /><span>your best one yet.</span></h2>
             <p>
-              No complicated setup. No credit card. Just a better way to move
-              work forward.
+              Explore a calmer approach to teamwork. This internship concept
+              demonstrates the experience of a modern workflow platform.
             </p>
             <a class="button button-light" href="mailto:hello@velora.example"
-              >Talk to Velora <span>→</span></a
+              >Email Velora (demo) <span aria-hidden="true">→</span></a
             >
           </div>
         </section>
       </main>
 
+      <!-- Footer: internal navigation and an explicit demonstration disclosure. -->
       <footer class="footer">
         <div class="container footer-grid">
           <div>
@@ -497,6 +539,11 @@
               Clear work. Better momentum.<br />Built for teams who care about
               craft.
             </p>
+            <!-- Contact information uses a reserved example domain for the fictional business. -->
+            <address class="footer-contact">
+              <a href="mailto:hello@velora.example">hello@velora.example</a>
+              <span>Remote-first · Working worldwide</span>
+            </address>
           </div>
           <div class="footer-links">
             <div>
@@ -506,20 +553,42 @@
             </div>
             <div>
               <span>Company</span><a href="#about">About</a
-              ><a href="#contact">Contact</a><a href="#top">Careers</a>
+              ><a href="#contact">Contact</a><a href="#contact">Enquiries</a>
             </div>
             <div>
-              <span>Follow</span><a href="#top">LinkedIn ↗</a
-              ><a href="#top">X / Twitter ↗</a><a href="#top">Instagram ↗</a>
+              <!-- Platform homepages are intentional demo destinations, not invented company profiles. -->
+              <span>Social</span>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn platform (demo link, opens in a new tab)"
+                >LinkedIn ↗</a
+              >
+              <a
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X platform (demo link, opens in a new tab)"
+                >X / Twitter ↗</a
+              >
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram platform (demo link, opens in a new tab)"
+                >Instagram ↗</a
+              >
             </div>
           </div>
         </div>
         <div class="container footer-bottom">
-          <span>© 2026 Velora Labs. Fictional company for demonstration.</span>
-          <span>Made with HTML · CSS · JavaScript</span>
+          <span>© 2026 Velora Labs · Fictional internship project.</span>
+          <span>Demo contact and social links · HTML / CSS / JS</span>
         </div>
       </footer>
     </div>
+    <!-- Loaded after the HTML so DOM elements exist before event listeners are attached. -->
     <script src="script.js"></script>
   </body>
 </html>
