@@ -68,7 +68,7 @@ The header spans the viewport with 32px desktop edge spacing and 16px on smaller
 Testimonials change only when the reader chooses an arrow or dot. Dot state is exposed with `aria-pressed`; the current quote is announced through a polite live region. Content and navigation remain available without JavaScript. Motion respects the system's reduced-motion preference.
 
 
-Automated Chromium checks passed for:
+Checks passed for:
 
 - Layouts at 320, 375, 390, 768, 1024, 1440 and 1920px, with equal measured side margins and no horizontal document overflow.
 - Major headings, cards, CTA buttons and contact information staying inside the viewport.
@@ -110,6 +110,6 @@ GitHub's official instructions: [Configuring a publishing source](https://docs.g
 
 ## Fictional content and scope
 
-Velora, the sample customers, testimonials, dashboard data and metrics are invented for demonstration. `hello@velora.example` uses a reserved example domain and is not a working mailbox. Social links intentionally open platform homepages; they do not represent real Velora profiles. Replace these destinations if genuine company details are supplied.
+Velora, the sample customers, testimonials, dashboard data and metrics are invented for demonstration. `hello@velora.example` uses a reserved example domain and is not a working mailbox. Social links intentionally open platform homepages; they do not represent real Velora profiles. 
 
 This is a frontend landing page. It does not implement a working SaaS product, backend, authentication or email delivery. The contact CTA opens the visitor's email application. Command search filters the visual preview only; its shortcut badges are illustrative.
