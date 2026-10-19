@@ -53,11 +53,9 @@ Google Fonts is optional: system fonts are used if the external font service can
 | `favicon.svg`             | Small scalable brand mark                                    |
 | `tests/browser-check.cjs` | Browser regression and accessibility checks                  |
 | `package-lock.json`       | Locks the development dependencies for reproducible installs |
-| `QA.md`                   | Dated audit evidence, fixes and testing limits               |
+| `QA.md`                   | Audit evidence, fixes and testing limits               |
 | `package.json`            | Development-only verification commands                       |
 | `.gitignore`              | Excludes local dependencies and environment files            |
-| `.nojekyll`               | Keeps GitHub Pages deployment as a plain static site         |
-| `WALKTHROUGH.md`          | Step-by-step explanation and presentation preparation        |
 
 ## Design and accessibility decisions
 
@@ -69,7 +67,6 @@ The header spans the viewport with 32px desktop edge spacing and 16px on smaller
 
 Testimonials change only when the reader chooses an arrow or dot. Dot state is exposed with `aria-pressed`; the current quote is announced through a polite live region. Content and navigation remain available without JavaScript. Motion respects the system's reduced-motion preference.
 
-## Verification — 19 October 2026
 
 Automated Chromium checks passed for:
 
@@ -84,7 +81,7 @@ Automated Chromium checks passed for:
 - No JavaScript runtime errors during those checks.
 - axe-core WCAG A/AA scans at 375 and 1440px with **zero detected violations**.
 
-Desktop and phone screenshots of the published source were visually inspected. The public HTML, CSS, JavaScript and favicon returned HTTP 200 and matched the repository files. Browser checks run against local copies of those same published files: direct live-browser navigation was limited by this test environment’s certificate trust configuration. Automated checks do not replace a real-phone, screen-reader or Safari/Firefox/Edge review; those checks remain recommended before submission. External social destinations are configured but were not exercised as part of the local test suite. Deployment status and public asset responses are checked separately after publishing changes.
+Desktop and phone screenshots of the published source were visually inspected. The public HTML, CSS, JavaScript and favicon returned HTTP 200 and matched the repository files. Browser checks run against local copies of those same published files: direct live-browser navigation was limited by this test environment’s certificate trust configuration. External social destinations are configured but were not exercised as part of the local test suite. Deployment status and public asset responses are checked separately after publishing changes.
 
 ### Reproduce checks
 
