@@ -54,11 +54,13 @@ landing-page-project/
 
 ## Live Demo
 
-Add the deployed website URL here.
+https://thebossman-tech.github.io/landing-page-project/
 
 ## Author
 
-Add your name and GitHub profile.
+Ogundijo Olatunbosun.  
+
+[thebossman-tech](https://github.com/thebossman-tech)
 
 ## Acknowledgment
 
