@@ -2,7 +2,7 @@
 
 ## Result
 
-The required landing-page features are present. Core layout and interaction checks passed in Chromium, and the public repository and published assets are accessible. This is evidence of the tested scope, not a guarantee of perfect behaviour on every device.
+The required landing-page features are present. Core layout and interaction checks passed in Chromium, and the public repository and published assets are accessible.
 
 ## Requirement checklist
 
