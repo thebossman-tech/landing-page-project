@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -99,7 +99,7 @@
                 </a>
               </div>
 
-              <div class="trust-row" aria-label="Trust indicators">
+              <div class="trust-row" role="group" aria-label="Trust indicators">
                 <div class="avatars" aria-hidden="true">
                   <span>AM</span><span>JT</span><span>KO</span><span>+</span>
                 </div>
@@ -306,16 +306,17 @@
                   <div>
                     <span class="activity-avatar">JK</span
                     ><span>Jordan completed <b>Homepage v2</b></span
-                    ><time>2m</time>
+                    ><time datetime="PT2M">2m</time>
                   </div>
                   <div>
                     <span class="activity-avatar alt">SA</span
                     ><span>Sam moved <b>Mobile QA</b></span
-                    ><time>18m</time>
+                    ><time datetime="PT18M">18m</time>
                   </div>
                   <div>
                     <span class="activity-avatar gold">MO</span
-                    ><span>Morgan added a comment</span><time>42m</time>
+                    ><span>Morgan added a comment</span
+                    ><time datetime="PT42M">42m</time>
                   </div>
                 </div>
               </article>
@@ -388,6 +389,7 @@
 
             <div
               class="command-demo reveal reveal-delay"
+              role="group"
               aria-label="Velora command menu preview"
             >
               <div class="command-top">
@@ -435,12 +437,14 @@
               </div>
               <div class="testimonial-controls">
                 <button
+                  type="button"
                   class="testimonial-btn prev"
                   aria-label="Previous testimonial"
                 >
                   ←
                 </button>
                 <button
+                  type="button"
                   class="testimonial-btn next"
                   aria-label="Next testimonial"
                 >
@@ -498,10 +502,26 @@
                 </div>
               </article>
             </div>
-            <div class="testimonial-dots" aria-label="Testimonial navigation">
-              <button class="dot active" aria-label="Testimonial 1"></button>
-              <button class="dot" aria-label="Testimonial 2"></button>
-              <button class="dot" aria-label="Testimonial 3"></button>
+            <div
+              class="testimonial-dots"
+              role="group"
+              aria-label="Testimonial navigation"
+            >
+              <button
+                type="button"
+                class="dot active"
+                aria-label="Testimonial 1"
+              ></button>
+              <button
+                type="button"
+                class="dot"
+                aria-label="Testimonial 2"
+              ></button>
+              <button
+                type="button"
+                class="dot"
+                aria-label="Testimonial 3"
+              ></button>
             </div>
           </div>
         </section>
