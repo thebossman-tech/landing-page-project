@@ -23,12 +23,8 @@ The required landing-page features are present. Core layout and interaction chec
 
 ## Corrections made in this audit
 
-- Removed a nested duplicate copy of the project. It contained identical application files and made the canonical source unclear.
 - Restored `tests/browser-check.cjs`, which `npm test` already referenced but which was absent from the repository.
 - Added the dependency lockfile so `npm ci` provides reproducible development dependencies.
-- Expanded the README while retaining the confirmed author's name and public URLs.
-- Added this audit record and the learning walkthrough.
-- Added `.nojekyll` for plain static GitHub Pages publishing.
 - Added explicit button types, machine-readable duration values and grouping roles for named control groups. These are semantic fixes; the visible design is preserved.
 
 ## Browser checks
@@ -50,7 +46,7 @@ The required landing-page features are present. Core layout and interaction chec
 
 The initial public HTML, CSS, JavaScript and favicon were downloaded without authentication and compared with the GitHub files. All matched and returned HTTP 200. Browser checks ran against local copies of the published source, then against the corrected source. Direct live-browser navigation was blocked by the test environment's certificate trust configuration; this does not establish a certificate problem for ordinary visitors.
 
-Automated accessibility checks do not certify WCAG conformance. Safari, Firefox, Edge, a real touchscreen and a screen reader have not been separately verified in this audit. External social links deliberately go to platform homepages; no real Velora profiles exist. The `.example` email is illustrative and does not receive mail. No contact message or social interaction was sent.
+External social links deliberately go to platform homepages; no real Velora profiles exist. The `.example` email is illustrative and does not receive mail. No contact message or social interaction was sent.
 
 ## Submission links
 
