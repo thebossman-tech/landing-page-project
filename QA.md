@@ -1,4 +1,4 @@
-# Internship submission audit — 19 October 2026
+
 
 ## Result
 
@@ -16,7 +16,7 @@ The required landing-page features are present. Core layout and interaction chec
 | Responsive mobile/tablet/desktop layouts            | Tested at 320, 375, 390, 768, 1024, 1440 and 1920px                               |
 | Smooth scrolling and basic animation                | CSS scroll behaviour and motion preference checked                                |
 | Hamburger menu                                      | Visible 44px three-bar control up to 900px; keyboard and resize behaviour checked |
-| Properly commented and organized code               | Separate HTML/CSS/JS files with explanatory comments; duplicate project removed   |
+| Properly commented and organized code               | Separate HTML/CSS/JS files with explanatory comments;   |
 | README explaining the project                       | Technology, structure, running, testing, scope, author and live links documented  |
 | Correct public repository name                      | `thebossman-tech/landing-page-project`, public                                    |
 | Public live/demo URL                                | HTML, stylesheet, script and favicon returned HTTP 200                            |
@@ -57,4 +57,3 @@ Automated accessibility checks do not certify WCAG conformance. Safari, Firefox,
 - Repository / Submission URL: https://github.com/thebossman-tech/landing-page-project
 - Live / Demo URL: https://thebossman-tech.github.io/landing-page-project/
 
-Before submitting, open both links in a private browser window and check the current deployment on a real phone. No additional framework, backend or contact-form processing is required by the internship brief.
